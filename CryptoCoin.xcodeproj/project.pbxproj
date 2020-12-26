@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FEF3818F25954E4A003CAFEE /* CryptoCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3818E25954E4A003CAFEE /* CryptoCoinApp.swift */; };
-		FEF3819125954E4A003CAFEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3819025954E4A003CAFEE /* ContentView.swift */; };
+		FEF3819125954E4A003CAFEE /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3819025954E4A003CAFEE /* CoinListView.swift */; };
 		FEF3819325954E4C003CAFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3819225954E4C003CAFEE /* Assets.xcassets */; };
 		FEF3819625954E4C003CAFEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3819525954E4C003CAFEE /* Preview Assets.xcassets */; };
+		FEF381A325954EB1003CAFEE /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF381A225954EB1003CAFEE /* CoinListViewModel.swift */; };
+		FEF381A825954EC7003CAFEE /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF381A725954EC7003CAFEE /* CryptoService.swift */; };
+		FEF381AE25954EEA003CAFEE /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF381AD25954EEA003CAFEE /* CoinModel.swift */; };
+		FEF381B125954F22003CAFEE /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF381B025954F22003CAFEE /* CoinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEF3818B25954E4A003CAFEE /* CryptoCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF3818E25954E4A003CAFEE /* CryptoCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinApp.swift; sourceTree = "<group>"; };
-		FEF3819025954E4A003CAFEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FEF3819025954E4A003CAFEE /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		FEF3819225954E4C003CAFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF3819525954E4C003CAFEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEF3819725954E4C003CAFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF381A225954EB1003CAFEE /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		FEF381A725954EC7003CAFEE /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		FEF381AD25954EEA003CAFEE /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		FEF381B025954F22003CAFEE /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,11 @@
 		FEF3818D25954E4A003CAFEE /* CryptoCoin */ = {
 			isa = PBXGroup;
 			children = (
+				FEF381A625954EB6003CAFEE /* Services */,
+				FEF3819F25954E74003CAFEE /* Model */,
+				FEF381A025954E7A003CAFEE /* View */,
+				FEF381A125954E84003CAFEE /* ViewModel */,
 				FEF3818E25954E4A003CAFEE /* CryptoCoinApp.swift */,
-				FEF3819025954E4A003CAFEE /* ContentView.swift */,
 				FEF3819225954E4C003CAFEE /* Assets.xcassets */,
 				FEF3819725954E4C003CAFEE /* Info.plist */,
 				FEF3819425954E4C003CAFEE /* Preview Content */,
@@ -67,6 +78,39 @@
 				FEF3819525954E4C003CAFEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEF3819F25954E74003CAFEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381AD25954EEA003CAFEE /* CoinModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEF381A025954E7A003CAFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3819025954E4A003CAFEE /* CoinListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEF381A125954E84003CAFEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381A225954EB1003CAFEE /* CoinListViewModel.swift */,
+				FEF381B025954F22003CAFEE /* CoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FEF381A625954EB6003CAFEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEF381A725954EC7003CAFEE /* CryptoService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF3819125954E4A003CAFEE /* ContentView.swift in Sources */,
+				FEF381A825954EC7003CAFEE /* CryptoService.swift in Sources */,
+				FEF381A325954EB1003CAFEE /* CoinListViewModel.swift in Sources */,
+				FEF381B125954F22003CAFEE /* CoinViewModel.swift in Sources */,
+				FEF3819125954E4A003CAFEE /* CoinListView.swift in Sources */,
+				FEF381AE25954EEA003CAFEE /* CoinModel.swift in Sources */,
 				FEF3818F25954E4A003CAFEE /* CryptoCoinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
